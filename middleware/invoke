@@ -1,0 +1,3 @@
+#!/bin/sh
+#/usr/bin/invoke_app "$@" -C "start_jupyter -A -t  -T @tool tellurium_jupyter_app.ipynb" -t tellurium_jupyter_app -u anaconda-6
+/usr/bin/invoke_app "$@" -C "start_jupyter -t -T @tool tellurium_jupyter_app.ipynb" -t tellurium_jupyter_app -u anaconda-6
