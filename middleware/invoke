@@ -1,7 +1,8 @@
 #!/bin/sh
 
-/usr/bin/invoke_app "$@" -C "start_jupyter -t -T @tool tellurium_jupyter_app.ipynb" \
+/usr/bin/invoke_app "$@" -C "start_jupyter -t -T @tool" \
                          -t tellurium \
                          -u anaconda3-5.1 \
-                         -e CUSTOMPACKAGES=/apps/share64/debian7/anaconda/anaconda3-5.1/tools/tellurium/20190823/lib/python3.6/site-packages
+                         -e TOOL_PYTHONPATH=/apps/share64/debian7/anaconda/anaconda3-5.1/tools/tellurium/20190823/lib/python3.6/site-packages"
+
 
